@@ -14,7 +14,6 @@ export function BuildBlogSection() {
               About Us
             </button>
           </div>
-          
           <div className="bg-white border-2 border-gray-900 rounded-3xl p-12">
             <h3 className="text-3xl mb-4">Help Center</h3>
             <p className="text-gray-600 mb-8">
@@ -33,9 +32,8 @@ export function BuildBlogSection() {
 export function SpywareSection() {
   return (
     <section className="text-white py-20" style={{
-    background: "linear-gradient(90deg, #2925CC 0%, #4B48E5 100%)"
-  }}>
-
+      background: "linear-gradient(90deg, #2925CC 0%, #4B48E5 100%)"
+    }}>
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl mb-8">
           Is someone spying on your phone?
@@ -53,4 +51,11 @@ export function SpywareSection() {
   );
 }
 
-
+export function CTASections() {
+  return (
+    <>
+      <BuildBlogSection />
+      <SpywareSection />
+    </>
+  );
+}
